@@ -522,6 +522,9 @@ attention_grid = cls_attention.reshape(14, 14)
 attention_map = cv2.resize(attention_grid, (224, 224))
 ```
 
+![Attention_visualixation](attention_visualizations/paper_style_grid_figure4_FINAL.png)
+
+
 ### Visualization Modes
 
 #### Mode 1: Heatmap
@@ -778,74 +781,6 @@ ELSE:
 - Attention map visualization
 - Shows which regions influenced decision
 - Validated alignment with clinical knowledge
-
----
-
-## 📁 Repository Structure
-
-```
-anemia-detection-vit/
-│
-├── 📂 data/
-│   ├── raw/                    # Original 2,438 images
-│   ├── processed/              # Cleaned 2,248 images
-│   ├── train/                  # 80% split (1,798 images)
-│   └── test/                   # 20% split (450 images)
-│
-├── 📂 models/
-│   ├── yolo/
-│   │   ├── best.pt            # YOLOv8 eye detection model
-│   │   └── config.yaml
-│   ├── unet/
-│   │   ├── best_model.pth     # U-Net segmentation model
-│   │   └── config.yaml
-│   └── vit/
-│       ├── best_model.pth     # ViT-B/16 classification model
-│       └── config.yaml
-│
-├── 📂 notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_preprocessing.ipynb
-│   ├── 03_baseline_svm.ipynb
-│   ├── 04_vit_training.ipynb
-│   ├── 05_cross_validation_analysis.ipynb
-│   └── 06_attention_analysis.ipynb
-│
-├── 📂 src/
-│   ├── preprocessing/
-│   │   ├── __init__.py
-│   │   ├── eye_detection.py    # YOLO eye detection
-│   │   ├── segmentation.py     # U-Net segmentation
-│   │   └── data_cleaning.py    # Quality control
-│   │
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── vit_classifier.py   # ViT classification pipeline
-│   │   ├── baseline_svm.py     # SVM baseline
-│   │   └── ensemble.py         # Ensemble voting
-│   │
-│   ├── visualization/
-│   │   ├── __init__.py
-│   │   ├── attention_maps.py   # Attention visualization
-│   │   └── metrics.py          # Performance plots
-│   │
-│   └── utils/
-│       ├── __init__.py
-│       ├── data_loader.py      # Dataset loading
-│       ├── metrics.py          # Evaluation metrics
-│       └── config.py           # Configuration
-│
-├── 📄 streamlit_app.py          # Main deployment application
-├── 📄 train.py                  # Training script
-├── 📄 evaluate.py               # Evaluation script
-├── 📄 inference.py              # Single image inference
-│
-├── 📋 requirements.txt          # Python dependencies
-├── 📄 README.md                 # This file
-├── 📄 LICENSE                   # MIT License
-├── 📄 CITATION.bibtex          # Citation format
-└── 📄 CHANGELOG.md             # Version history
-```
 
 ---
 
