@@ -914,11 +914,11 @@ If you use this project in your research, please cite:
 
 ```bibtex
 @misc{anemia-detection-vit,
-  author = {Your Name},
+  author = {Namrata Patel},
   title = {Non-Invasive Anemia Detection Using Vision Transformers},
-  year = {2025},
+  year = {2026},
   publisher = {GitHub},
-  howpublished = {\url{https://github.com/yourusername/anemia-detection-vit}},
+  howpublished = {\url{(https://github.com/Namratapatel9027/Non-Invasive_Anemia_Detection_Using_Vision_Transformers}},
   note = {Research prototype with leakage-safe evaluation}
 }
 ```
@@ -997,10 +997,10 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ## 📧 Contact & Support
 
-**Author:** Your Name  
-**Email:** your.email@example.com  
-**LinkedIn:** [linkedin.com/in/yourprofile]()  
-**Portfolio:** [yourportfolio.com](https://yourportfolio.com)
+**Author:** Namrata Patel 
+**Email:** Namratapatel091@gmail.com  
+**LinkedIn:** [Namrata Patel](https://www.linkedin.com/in/namratapatel9027/)  
+**Portfolio:** [Namrata Patel](https://codebasics.io/portfolio/Namrata-patel)
 
 **Issues & Questions:**
 - Open GitHub issue for bugs
@@ -1011,7 +1011,8 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ## 🎉 Acknowledgments
 
-- Clinical data provided by [Hospital/Institution name]
+- Clinical data provided by [[INDIAN COUNCIL OF MEDICAL RESEARCH
+](https://www.icmr.gov.in/)]
 - Vision Transformer architecture from Google Research
 - YOLOv8 framework from Ultralytics
 - U-Net architecture from Ronneberger et al.
